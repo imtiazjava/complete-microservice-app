@@ -1,0 +1,5 @@
+package com.itc.main.vo;
+
+public class Department {
+
+}

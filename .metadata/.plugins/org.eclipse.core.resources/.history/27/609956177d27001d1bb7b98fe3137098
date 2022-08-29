@@ -1,0 +1,6 @@
+server:
+  port: 9767
+
+spring:
+  application:
+    name: CONFIG-SERVER

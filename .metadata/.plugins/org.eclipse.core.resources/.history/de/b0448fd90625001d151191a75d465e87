@@ -1,0 +1,43 @@
+package com.itc.main.vo;
+
+
+public class Department {
+
+	private Long depatmentId;
+	private String departmentName;
+	private String departmentLocation;
+	public Department() {
+		super();
+	}
+	public Department(Long depatmentId, String departmentName, String departmentLocation) {
+		super();
+		this.depatmentId = depatmentId;
+		this.departmentName = departmentName;
+		this.departmentLocation = departmentLocation;
+	}
+	public Long getDepatmentId() {
+		return depatmentId;
+	}
+	public void setDepatmentId(Long depatmentId) {
+		this.depatmentId = depatmentId;
+	}
+	public String getDepartmentName() {
+		return departmentName;
+	}
+	public void setDepartmentName(String departmentName) {
+		this.departmentName = departmentName;
+	}
+	public String getDepartmentLocation() {
+		return departmentLocation;
+	}
+	public void setDepartmentLocation(String departmentLocation) {
+		this.departmentLocation = departmentLocation;
+	}
+	@Override
+	public String toString() {
+		return "Department [depatmentId=" + depatmentId + ", departmentName=" + departmentName + ", departmentLocation="
+				+ departmentLocation + "]";
+	}
+	
+	
+}

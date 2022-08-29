@@ -1,0 +1,10 @@
+
+
+#configure the server port
+server:
+  port: 7772
+  
+spring:
+  application:
+    name: EMPLOYEE-SERVICE
+ 

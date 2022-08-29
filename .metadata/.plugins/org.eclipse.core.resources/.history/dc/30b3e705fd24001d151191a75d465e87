@@ -1,0 +1,5 @@
+package com.itc.main.repository;
+
+public interface DepartmentRepository {
+
+}

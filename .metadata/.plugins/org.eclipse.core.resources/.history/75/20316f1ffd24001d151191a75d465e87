@@ -1,0 +1,5 @@
+package com.itc.main.services;
+
+public class DepartmentService {
+
+}

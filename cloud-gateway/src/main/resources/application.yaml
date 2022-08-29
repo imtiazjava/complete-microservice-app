@@ -1,0 +1,27 @@
+server:
+  port: 7676
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+      - id: EMPLOYEE-SERVICE
+        uri: lb://EMPLOYEE-SERVICE
+        predicates:
+        - Path=/apiemp/**
+        
+      - id: DEPATMENT-SERVICE
+        uri: lb://DEPATMENT-SERVICE 
+        predicates:
+        - Path=/apidept/**
+        
+    config:
+      enabled: false
+      uri:
+      - http://localhost:9767
+ 
+ 
+ 
+  

@@ -1,0 +1,26 @@
+package com.itc.main.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.itc.main.entity.Employee;
+import com.itc.main.services.EmployeeService;
+
+@RestController
+@RequestMapping("/apiemp/")
+public class EmployeeController {
+
+	@Autowired
+	private EmployeeService employeeService;
+
+	@PostMapping("save")
+	public ResponseEntity<Employee> save(@RequestBody Employee employee) {
+		Employee emp = this.employeeService.save(employee);
+		return new ResponseEntity<Employee>(emp, HttpStatus.CREATED);
+	}
+}

@@ -1,0 +1,17 @@
+#configure the server port
+server:
+  port: 7771
+  
+spring:
+  application:
+    name: DEPATMENT-SERVICE
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultzone : http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+  
